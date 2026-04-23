@@ -19,7 +19,7 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        getchar(); // clear newline
+        getchar();
 
         switch(choice) {
 
@@ -71,7 +71,7 @@ int main() {
                 fgets(str1, sizeof(str1), stdin);
                 str1[strcspn(str1, "\n")] = '\0';
 
-                // strrev is not standard but works in some compilers
+                
                 strrev(str1);
                 printf("Reversed string: %s\n", str1);
                 break;
