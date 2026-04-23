@@ -27,7 +27,20 @@ printf("Reading file using feels() :\n") ;
 /*5.fgets() - Read line by line */
 while(fgets(buffer), sizeof(buffer), fp)! =NULL) {
 printf("%s", buffer) ;
-
+}
+/* 6. fseek()- Move file pointer to beginning */
+fseek(fp,0, SEEK_SET);
+printf("/n Reading fil using fread(): \n");
+/* 7. fread() - Read entire fle */
+fread(buffer, sizeof(char), sizeof(buffer),fp);
+printf("%s",buffer);
+/* 8. feof() - check end of file */
+if(feof(fp) - check end of file  */
+printf("\n End of file reached, /n");
+}
+fclose(fp);
+return 0;
+}
 
 
 
